@@ -3,16 +3,16 @@ $(function(){ // Replaces $(document).ready(function(){});
 	$("#MyButton").click(function(){  // Not working.... :(
 		$("MyButton").text("Clicked!");
 		clicked = true;
-	});
-	$("#MyButton").mouseleave(function(){
+	})
+	.mouseleave(function(){
 		if(clicked){
 			$("MyButton").text("Click Me Again!");
 		}
 		else{
 			$("MyButton").text("Click Me!");
 		}
-	});
-	$("MyButton").hover(
+	})
+	.hover(
 		function(){
 			$("MyButton").text("Oh no, DON'T CLICK ME!!");
 		},
@@ -25,5 +25,4 @@ $(function(){ // Replaces $(document).ready(function(){});
 			}
 		}
 	);
-
 });
