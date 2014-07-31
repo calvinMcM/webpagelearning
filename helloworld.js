@@ -1,7 +1,7 @@
-$(function(){ // Replaces $(document).ready(function(){});
+$(function(){
 	var clicked = false;
-	var mb = $("MyButton"); 
-	$("#MyButton").click(function(){  // Not working.... :(
+	var mb = $("#MyButton"); 
+	mb.click(function(){
 		mb.text("Clicked!");
 		clicked = true;
 	})
