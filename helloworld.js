@@ -1,27 +1,28 @@
 $(function(){ // Replaces $(document).ready(function(){});
 	var clicked = false;
+	var mb = $("MyButton"); 
 	$("#MyButton").click(function(){  // Not working.... :(
-		$("MyButton").text("Clicked!");
+		mb.text("Clicked!");
 		clicked = true;
 	})
 	.mouseleave(function(){
 		if(clicked){
-			$("MyButton").text("Click Me Again!");
+			mb.text("Click Me Again!");
 		}
 		else{
-			$("MyButton").text("Click Me!");
+			mb.text("Click Me!");
 		}
 	})
 	.hover(
 		function(){
-			$("MyButton").text("Oh no, DON'T CLICK ME!!");
+			mb.text("Oh no, DON'T CLICK ME!!");
 		},
 		function(){
 			if(clicked){
-				$("MyButton").text("Click Me Again!");
+				mb.text("Click Me Again!");
 			}
 			else{
-				$("MyButton").text("Click Me!");
+				mb.text("Click Me!");
 			}
 		}
 	);
