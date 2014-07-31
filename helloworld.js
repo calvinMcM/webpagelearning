@@ -1,9 +1,12 @@
 $(function(){
 	var clicked = false;
-	var mb = $("#MyButton"); 
+	var mb = $("#MyButton");
+	var ob = $("#OutputBox");
 	mb.click(function(){
 		mb.text("Clicked!");
 		clicked = true;
+		var txt = $("#MyField").val();
+		ob.text(txt);
 	})
 	.mouseleave(function(){
 		if(clicked){
