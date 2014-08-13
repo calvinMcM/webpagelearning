@@ -1,32 +1,10 @@
-#Subtext{
-  color:red;
-  width:100%;
+form {
+  font-size: 0;
 }
-#MyButton{
-  width:30%;
-}
-#Banner{
-  background-color:yellow;
-  font-size:20pt;
-  width:100%;
-}
-#Box1{
-  background-color:pink;
-  width:50%;
-  height:50%;
-  float:left;
-}
-#Box2{
-  background-color:lightblue;
-  width:50%;
-  height:50%;
-  float:left;
-}
-#Field1{
-  width:20%;
-  float:left;
-}
-#OutputBox{
-  width:30%;
-  float:left;
+
+span {
+  font-size: 24px;
+  border: solid thin black;
+  height: 30px;
+  width: 30px;
 }
